@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="main">
+        <header class="header">
+            <div class="logo">
+                <img src="" alt="Логотип">
+            </div>
+
+            <nav>
+                <ul class="links">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-text">
+            <h1>Добро пожаловать</h1>
+            <p>Любой Текст</p>
+            <button>Связаться</button>
+        </div>
+
+        <div class="social-container">
+            <input type="checkbox" id="socialtoggle" class="social-toggle" />
+            <label for="socialtoggle" class="main-icon"></label>
+
+            <div class="social-icons">
+                <a href="#"><img class="social-icon" src="../assets/svg/vk.svg" alt="vk" /></a>
+                <a href="#"><img class="social-icon" src="../assets/svg/telegram.svg" alt="telegram" /></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog">
+        <div class="catalog-text">
+            <h1>КАТАЛОГ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="title">
+            <h1>О нас</h1>
+        </div>
+
+        <div class="content">
+            <!-- Left Column -->
+            <div>
+                <p>Текст</p>
+                <!-- Repeat as necessary -->
+                <!-- Add images or additional content here -->
+                <img src="" alt="Изображение">
+            </div>
+
+            <!-- Right Column -->
+            <div>
+                <!-- Add images or additional content here -->
+                <img src="" alt="Изображение">
+                <!-- Additional images can be added as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery and Slick Carousel JS -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Initialize Slick Carousel -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.autoplay').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+
+</body>
+
+</html>
